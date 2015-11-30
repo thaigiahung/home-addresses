@@ -10,13 +10,10 @@
 	</head>
 	<body>
 		<div id="map_wrapper">
-		    <div id="map_canvas" class="mapping"></div>
+		    <div id="map-canvas" class="mapping"></div>
 		</div>
 
 		<?php
-			error_reporting(E_ALL);
-			ini_set('display_errors', 1);
-
 			require_once('libs/HomeAddressesHelper.php');
 
 			$sql = "SELECT * FROM `address`";
@@ -47,7 +44,7 @@
 			    };
 			                    
 			    // Display a map on the page
-			    map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+			    map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 			    map.setTilt(45);
 
 			    var infos = '<?php echo json_encode($arr); ?>';
