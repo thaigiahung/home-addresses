@@ -41,7 +41,9 @@
 			    var map;
 			    var bounds = new google.maps.LatLngBounds();
 			    var mapOptions = {
-			        mapTypeId: 'roadmap'
+			        mapTypeId: 'roadmap',
+			        center: new google.maps.LatLng(10.776481, 106.683232),
+      				zoom: 12,
 			    };
 			                    
 			    // Display a map on the page
