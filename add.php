@@ -6,6 +6,11 @@
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+	<?php 
+		ini_set('display_errors', 1);
+		ini_set('display_startup_errors', 1);
+		error_reporting(E_ALL);
+	?>
 	<div id="map-search">
 		<input id="search-txt" type="text" placeholder="306 Dien Bien Phu, district 3, Ho Chi Minh, Vietnam" maxlength="200">
 		<input id="search-btn" type="button" value="Locate Address">
