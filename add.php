@@ -119,12 +119,11 @@
 
 				$.post( "api/add.php", data).done(function( result ) {
 					result = JSON.parse(result);
+					alert(result.message);
 				    if(result.status == 1) {
-				    	window.location.replace("index.php");
-				    }
-				    else
-				    {
-				    	alert(result.message);
+				    	$("#firstName").val("");
+				    	$("#lastName").val("");
+				    	$("#search-txt").val("");
 				    }
 			  	});
 			}
